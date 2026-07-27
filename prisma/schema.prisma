@@ -1,0 +1,164 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  avatar    String?
+  createdAt DateTime @default(now())
+}
+
+model Workspace {
+  id        String     @id @default(cuid())
+  name      String
+  ownerId   String
+  documents Document[]
+  createdAt DateTime   @default(now())
+}
+
+model Document {
+  id               String     @id @default(cuid())
+  title            String     @default("Untitled")
+  icon             String?
+  coverImage       String?
+  content          String?    // JSON stringified block data
+  parentDocumentId String?
+  parentDocument   Document?  @relation("ParentChild", fields: [parentDocumentId], references: [id], onDelete: Cascade)
+  childDocuments  Document[] @relation("ParentChild")
+  workspaceId      String
+  workspace        Workspace  @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  isArchived       Boolean    @default(false)
+  isPublished      Boolean    @default(false)
+  databases        Database[]
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+}
+
+model Database {
+  id         String     @id @default(cuid())
+  documentId String
+  document   Document   @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  title      String     @default("Untitled Database")
+  properties Property[]
+  rows       Row[]
+  createdAt  DateTime   @default(now())
+}
+
+model Property {
+  id         String   @id @default(cuid())
+  databaseId String
+  database   Database @relation(fields: [databaseId], references: [id], onDelete: Cascade)
+  name       String
+  type       String   // TEXT, SELECT, MULTI_SELECT, DATE, CHECKBOX
+  options    String?  // JSON stringified select options
+}
+
+model Row {
+  id         String   @id @default(cuid())
+  databaseId String
+  database   Database @relation(fields: [databaseId], references: [id], onDelete: Cascade)
+  properties String   // JSON stringified property values { propId: val }
+  position   Int      @default(0)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model TaskItem {
+  id               String         @id @default(cuid())
+  title            String
+  description      String?
+  category         String         @default("Work")
+  status           String         @default("To Do") // To Do, In Progress, In Review, Done
+  priority         String         @default("Medium") // High, Medium, Low, Critical
+  dueDate          String?
+  startDate        String?
+
+  // Hierarchy & Dependencies
+  parentTaskId     String?
+  parentTask       TaskItem?      @relation("Subtasks", fields: [parentTaskId], references: [id], onDelete: Cascade)
+  subtasks         TaskItem[]     @relation("Subtasks")
+
+  dependsOnTaskId  String?
+  dependsOnTask    TaskItem?      @relation("Dependencies", fields: [dependsOnTaskId], references: [id])
+  blockingTasks    TaskItem[]     @relation("Dependencies")
+
+  // Eisenhower Matrix
+  isUrgent         Boolean        @default(false)
+  isImportant      Boolean        @default(false)
+
+  // Time & Cost Tracking
+  estimatedHours   Float          @default(1.0)
+  actualHours      Float          @default(0.0)
+  isBillable       Boolean        @default(true)
+  hourlyRate       Float          @default(50.0)
+  isTimerRunning   Boolean        @default(false)
+  timerStartedAt   DateTime?
+
+  // Assignee & Custom Metadata
+  assignee         String         @default("Demo User")
+  assigneeAvatar   String         @default("https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80")
+  customFields     String         @default("{}") // JSON stringified metadata
+
+  completed        Boolean        @default(false)
+  isDeleted        Boolean        @default(false)
+
+  comments         TaskComment[]
+  auditLogs        TaskActivity[]
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+}
+
+model TaskComment {
+  id           String   @id @default(cuid())
+  taskId       String
+  task         TaskItem @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  authorName   String   @default("Demo User")
+  authorAvatar String   @default("https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80")
+  content      String
+  createdAt    DateTime @default(now())
+}
+
+model TaskActivity {
+  id        String   @id @default(cuid())
+  taskId    String
+  task      TaskItem @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  user      String   @default("Demo User")
+  action    String
+  details   String
+  createdAt DateTime @default(now())
+}
+
+model AutomationRule {
+  id        String   @id @default(cuid())
+  name      String
+  trigger   String
+  condition String
+  action    String
+  isEnabled Boolean  @default(true)
+}
+
+model HabitItem {
+  id                String   @id @default(cuid())
+  name              String
+  category          String   @default("Health")
+  icon              String   @default("flame")
+  streak            Int      @default(0)
+  targetDaysPerWeek Int      @default(7)
+  history           String   @default("{}")
+  isDeleted         Boolean  @default(false)
+  createdAt         DateTime @default(now())
+}
+
+model FocusLog {
+  id              String   @id @default(cuid())
+  durationMinutes Int
+  taskTitle       String   @default("Deep Focus Session")
+  timestamp       DateTime @default(now())
+}

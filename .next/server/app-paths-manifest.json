@@ -1,0 +1,9 @@
+{
+  "/page": "app/page.js",
+  "/api/documents/[documentId]/route": "app/api/documents/[documentId]/route.js",
+  "/api/documents/route": "app/api/documents/route.js",
+  "/api/habits/route": "app/api/habits/route.js",
+  "/api/tasks/route": "app/api/tasks/route.js",
+  "/(main)/documents/[documentId]/page": "app/(main)/documents/[documentId]/page.js",
+  "/(main)/tasks/page": "app/(main)/tasks/page.js"
+}
