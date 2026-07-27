@@ -1,0 +1,472 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.10.0_1/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/.npmrc
+5 silly config load:file:/Users/tesfayelemi/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "./npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/npm-cache/_logs/2026-07-27T14_02_02_173Z-
+10 verbose logfile /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/npm-cache/_logs/2026-07-27T14_02_02_173Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest @supabase/supabase-js@^2.42.0
+15 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/@supabase%2fsupabase-js 1198ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/@supabase%2fsupabase-js set size:undefined disposed:false
+19 silly placeDep ROOT @supabase/supabase-js@2.110.8 OK for: pulsetask-todo-tracking-app@1.0.0 want: ^2.42.0
+20 silly fetch manifest @supabase/auth-js@2.110.8
+21 silly packumentCache full:https://registry.npmjs.org/@supabase%2fauth-js cache-miss
+22 silly fetch manifest @supabase/storage-js@2.110.8
+23 silly packumentCache full:https://registry.npmjs.org/@supabase%2fstorage-js cache-miss
+24 silly fetch manifest @supabase/realtime-js@2.110.8
+25 silly packumentCache full:https://registry.npmjs.org/@supabase%2frealtime-js cache-miss
+26 silly fetch manifest @supabase/functions-js@2.110.8
+27 silly packumentCache full:https://registry.npmjs.org/@supabase%2ffunctions-js cache-miss
+28 silly fetch manifest @supabase/postgrest-js@2.110.8
+29 silly packumentCache full:https://registry.npmjs.org/@supabase%2fpostgrest-js cache-miss
+30 http fetch GET 200 https://registry.npmjs.org/@supabase%2fauth-js 1054ms (cache miss)
+31 silly packumentCache full:https://registry.npmjs.org/@supabase%2fauth-js set size:undefined disposed:false
+32 http fetch GET 200 https://registry.npmjs.org/@supabase%2fstorage-js 1067ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/@supabase%2fstorage-js set size:undefined disposed:false
+34 http fetch GET 200 https://registry.npmjs.org/@supabase%2ffunctions-js 1077ms (cache miss)
+35 silly packumentCache full:https://registry.npmjs.org/@supabase%2ffunctions-js set size:undefined disposed:false
+36 http fetch GET 200 https://registry.npmjs.org/@supabase%2fpostgrest-js 1087ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/@supabase%2fpostgrest-js set size:undefined disposed:false
+38 http fetch GET 200 https://registry.npmjs.org/@supabase%2frealtime-js 1485ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/@supabase%2frealtime-js set size:undefined disposed:false
+40 silly placeDep ROOT @supabase/auth-js@2.110.8 OK for: @supabase/supabase-js@2.110.8 want: 2.110.8
+41 silly placeDep ROOT @supabase/functions-js@2.110.8 OK for: @supabase/supabase-js@2.110.8 want: 2.110.8
+42 silly placeDep ROOT @supabase/postgrest-js@2.110.8 OK for: @supabase/supabase-js@2.110.8 want: 2.110.8
+43 silly placeDep ROOT @supabase/realtime-js@2.110.8 OK for: @supabase/supabase-js@2.110.8 want: 2.110.8
+44 silly placeDep ROOT @supabase/storage-js@2.110.8 OK for: @supabase/supabase-js@2.110.8 want: 2.110.8
+45 silly fetch manifest tslib@2.8.1
+46 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+47 silly fetch manifest tslib@2.8.1
+48 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+49 silly fetch manifest tslib@2.8.1
+50 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+51 silly fetch manifest tslib@2.8.1
+52 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+53 silly fetch manifest @supabase/phoenix@0.4.5
+54 silly packumentCache full:https://registry.npmjs.org/@supabase%2fphoenix cache-miss
+55 silly fetch manifest tslib@2.8.1
+56 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+57 silly fetch manifest iceberg-js@^0.8.1
+58 silly packumentCache full:https://registry.npmjs.org/iceberg-js cache-miss
+59 http fetch GET 200 https://registry.npmjs.org/tslib 34ms (cache miss)
+60 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+61 http fetch GET 200 https://registry.npmjs.org/tslib 35ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+63 http fetch GET 200 https://registry.npmjs.org/tslib 37ms (cache miss)
+64 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+65 http fetch GET 200 https://registry.npmjs.org/tslib 37ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+67 http fetch GET 200 https://registry.npmjs.org/tslib 62ms (cache miss)
+68 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+69 http fetch GET 200 https://registry.npmjs.org/iceberg-js 489ms (cache miss)
+70 silly packumentCache full:https://registry.npmjs.org/iceberg-js set size:undefined disposed:false
+71 http fetch GET 200 https://registry.npmjs.org/@supabase%2fphoenix 1012ms (cache miss)
+72 silly packumentCache full:https://registry.npmjs.org/@supabase%2fphoenix set size:undefined disposed:false
+73 silly placeDep ROOT tslib@2.8.1 OK for: @supabase/auth-js@2.110.8 want: 2.8.1
+74 silly placeDep ROOT @supabase/phoenix@0.4.5 OK for: @supabase/realtime-js@2.110.8 want: 0.4.5
+75 silly placeDep ROOT iceberg-js@0.8.1 OK for: @supabase/storage-js@2.110.8 want: ^0.8.1
+76 silly reify moves {}
+77 silly audit bulk request {
+77 silly audit   '@esbuild/aix-ppc64': [ '0.21.5' ],
+77 silly audit   '@esbuild/android-arm': [ '0.21.5' ],
+77 silly audit   '@esbuild/android-arm64': [ '0.21.5' ],
+77 silly audit   '@esbuild/android-x64': [ '0.21.5' ],
+77 silly audit   '@esbuild/darwin-arm64': [ '0.21.5' ],
+77 silly audit   '@esbuild/darwin-x64': [ '0.21.5' ],
+77 silly audit   '@esbuild/freebsd-arm64': [ '0.21.5' ],
+77 silly audit   '@esbuild/freebsd-x64': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-arm': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-arm64': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-ia32': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-loong64': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-mips64el': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-ppc64': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-riscv64': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-s390x': [ '0.21.5' ],
+77 silly audit   '@esbuild/linux-x64': [ '0.21.5' ],
+77 silly audit   '@esbuild/netbsd-x64': [ '0.21.5' ],
+77 silly audit   '@esbuild/openbsd-x64': [ '0.21.5' ],
+77 silly audit   '@esbuild/sunos-x64': [ '0.21.5' ],
+77 silly audit   '@esbuild/win32-arm64': [ '0.21.5' ],
+77 silly audit   '@esbuild/win32-ia32': [ '0.21.5' ],
+77 silly audit   '@esbuild/win32-x64': [ '0.21.5' ],
+77 silly audit   '@kurkle/color': [ '0.3.4' ],
+77 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-android-arm64': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-darwin-arm64': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-darwin-x64': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-freebsd-x64': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-loong64-musl': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-ppc64-musl': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-openbsd-x64': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.62.3' ],
+77 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.62.3' ],
+77 silly audit   '@types/estree': [ '1.0.9' ],
+77 silly audit   'canvas-confetti': [ '1.9.4' ],
+77 silly audit   'chart.js': [ '4.5.1' ],
+77 silly audit   esbuild: [ '0.21.5' ],
+77 silly audit   fsevents: [ '2.3.3' ],
+77 silly audit   lucide: [ '0.359.0' ],
+77 silly audit   nanoid: [ '3.3.16' ],
+77 silly audit   picocolors: [ '1.1.1' ],
+77 silly audit   postcss: [ '8.5.23' ],
+77 silly audit   rollup: [ '4.62.3' ],
+77 silly audit   'source-map-js': [ '1.2.1' ],
+77 silly audit   vite: [ '5.4.21' ],
+77 silly audit   '@supabase/supabase-js': [ '2.110.8' ],
+77 silly audit   '@supabase/auth-js': [ '2.110.8' ],
+77 silly audit   '@supabase/functions-js': [ '2.110.8' ],
+77 silly audit   '@supabase/postgrest-js': [ '2.110.8' ],
+77 silly audit   '@supabase/realtime-js': [ '2.110.8' ],
+77 silly audit   '@supabase/storage-js': [ '2.110.8' ],
+77 silly audit   tslib: [ '2.8.1' ],
+77 silly audit   '@supabase/phoenix': [ '0.4.5' ],
+77 silly audit   'iceberg-js': [ '0.8.1' ]
+77 silly audit }
+78 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-x64-msvc
+79 silly reify mark deleted [
+79 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-x64-msvc'
+79 silly reify ]
+80 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-x64-gnu
+81 silly reify mark deleted [
+81 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-x64-gnu'
+81 silly reify ]
+82 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-ia32-msvc
+83 silly reify mark deleted [
+83 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-ia32-msvc'
+83 silly reify ]
+84 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-arm64-msvc
+85 silly reify mark deleted [
+85 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-win32-arm64-msvc'
+85 silly reify ]
+86 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-openharmony-arm64
+87 silly reify mark deleted [
+87 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-openharmony-arm64'
+87 silly reify ]
+88 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-openbsd-x64
+89 silly reify mark deleted [
+89 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-openbsd-x64'
+89 silly reify ]
+90 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-x64-musl
+91 silly reify mark deleted [
+91 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-x64-musl'
+91 silly reify ]
+92 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-x64-gnu
+93 silly reify mark deleted [
+93 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-x64-gnu'
+93 silly reify ]
+94 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-s390x-gnu
+95 silly reify mark deleted [
+95 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-s390x-gnu'
+95 silly reify ]
+96 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-riscv64-musl
+97 silly reify mark deleted [
+97 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-riscv64-musl'
+97 silly reify ]
+98 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-riscv64-gnu
+99 silly reify mark deleted [
+99 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-riscv64-gnu'
+99 silly reify ]
+100 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-ppc64-musl
+101 silly reify mark deleted [
+101 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-ppc64-musl'
+101 silly reify ]
+102 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-ppc64-gnu
+103 silly reify mark deleted [
+103 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-ppc64-gnu'
+103 silly reify ]
+104 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-loong64-musl
+105 silly reify mark deleted [
+105 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-loong64-musl'
+105 silly reify ]
+106 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-loong64-gnu
+107 silly reify mark deleted [
+107 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-loong64-gnu'
+107 silly reify ]
+108 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm64-musl
+109 silly reify mark deleted [
+109 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm64-musl'
+109 silly reify ]
+110 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm64-gnu
+111 silly reify mark deleted [
+111 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm64-gnu'
+111 silly reify ]
+112 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm-musleabihf
+113 silly reify mark deleted [
+113 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm-musleabihf'
+113 silly reify ]
+114 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm-gnueabihf
+115 silly reify mark deleted [
+115 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-linux-arm-gnueabihf'
+115 silly reify ]
+116 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-freebsd-x64
+117 silly reify mark deleted [
+117 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-freebsd-x64'
+117 silly reify ]
+118 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-freebsd-arm64
+119 silly reify mark deleted [
+119 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-freebsd-arm64'
+119 silly reify ]
+120 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-darwin-x64
+121 silly reify mark deleted [
+121 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-darwin-x64'
+121 silly reify ]
+122 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-android-arm64
+123 silly reify mark deleted [
+123 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-android-arm64'
+123 silly reify ]
+124 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-android-arm-eabi
+125 silly reify mark deleted [
+125 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@rollup/rollup-android-arm-eabi'
+125 silly reify ]
+126 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/win32-x64
+127 silly reify mark deleted [
+127 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/win32-x64'
+127 silly reify ]
+128 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/win32-ia32
+129 silly reify mark deleted [
+129 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/win32-ia32'
+129 silly reify ]
+130 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/win32-arm64
+131 silly reify mark deleted [
+131 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/win32-arm64'
+131 silly reify ]
+132 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/sunos-x64
+133 silly reify mark deleted [
+133 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/sunos-x64'
+133 silly reify ]
+134 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/openbsd-x64
+135 silly reify mark deleted [
+135 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/openbsd-x64'
+135 silly reify ]
+136 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/netbsd-x64
+137 silly reify mark deleted [
+137 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/netbsd-x64'
+137 silly reify ]
+138 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-x64
+139 silly reify mark deleted [
+139 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-x64'
+139 silly reify ]
+140 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-s390x
+141 silly reify mark deleted [
+141 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-s390x'
+141 silly reify ]
+142 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-riscv64
+143 silly reify mark deleted [
+143 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-riscv64'
+143 silly reify ]
+144 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-ppc64
+145 silly reify mark deleted [
+145 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-ppc64'
+145 silly reify ]
+146 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-mips64el
+147 silly reify mark deleted [
+147 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-mips64el'
+147 silly reify ]
+148 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-loong64
+149 silly reify mark deleted [
+149 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-loong64'
+149 silly reify ]
+150 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-ia32
+151 silly reify mark deleted [
+151 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-ia32'
+151 silly reify ]
+152 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-arm64
+153 silly reify mark deleted [
+153 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-arm64'
+153 silly reify ]
+154 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-arm
+155 silly reify mark deleted [
+155 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/linux-arm'
+155 silly reify ]
+156 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/freebsd-x64
+157 silly reify mark deleted [
+157 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/freebsd-x64'
+157 silly reify ]
+158 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/freebsd-arm64
+159 silly reify mark deleted [
+159 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/freebsd-arm64'
+159 silly reify ]
+160 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/darwin-x64
+161 silly reify mark deleted [
+161 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/darwin-x64'
+161 silly reify ]
+162 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/android-x64
+163 silly reify mark deleted [
+163 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/android-x64'
+163 silly reify ]
+164 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/android-arm64
+165 silly reify mark deleted [
+165 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/android-arm64'
+165 silly reify ]
+166 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/android-arm
+167 silly reify mark deleted [
+167 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/android-arm'
+167 silly reify ]
+168 verbose reify failed optional dependency /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/aix-ppc64
+169 silly reify mark deleted [
+169 silly reify   '/Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app/node_modules/@esbuild/aix-ppc64'
+169 silly reify ]
+170 http cache @supabase/phoenix@https://registry.npmjs.org/@supabase/phoenix/-/phoenix-0.4.5.tgz 0ms (cache hit)
+171 http cache tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 0ms (cache hit)
+172 http cache @supabase/storage-js@https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.110.8.tgz 0ms (cache hit)
+173 http cache @supabase/postgrest-js@https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.110.8.tgz 0ms (cache hit)
+174 http cache iceberg-js@https://registry.npmjs.org/iceberg-js/-/iceberg-js-0.8.1.tgz 0ms (cache hit)
+175 http cache @supabase/functions-js@https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.110.8.tgz 0ms (cache hit)
+176 http cache @supabase/auth-js@https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.110.8.tgz 0ms (cache hit)
+177 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+178 http cache @supabase/supabase-js@https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.110.8.tgz 0ms (cache hit)
+179 http cache @supabase/realtime-js@https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.110.8.tgz 0ms (cache hit)
+180 silly tarball no local data for @supabase/phoenix@https://registry.npmjs.org/@supabase/phoenix/-/phoenix-0.4.5.tgz. Extracting by manifest.
+181 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz. Extracting by manifest.
+182 silly tarball no local data for @supabase/postgrest-js@https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.110.8.tgz. Extracting by manifest.
+183 silly tarball no local data for iceberg-js@https://registry.npmjs.org/iceberg-js/-/iceberg-js-0.8.1.tgz. Extracting by manifest.
+184 silly tarball no local data for @supabase/storage-js@https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.110.8.tgz. Extracting by manifest.
+185 silly tarball no local data for @supabase/auth-js@https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.110.8.tgz. Extracting by manifest.
+186 silly tarball no local data for @supabase/functions-js@https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.110.8.tgz. Extracting by manifest.
+187 silly tarball no local data for @supabase/realtime-js@https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.110.8.tgz. Extracting by manifest.
+188 silly tarball no local data for @supabase/supabase-js@https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.110.8.tgz. Extracting by manifest.
+189 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 32ms (cache miss)
+190 http fetch GET 200 https://registry.npmjs.org/iceberg-js/-/iceberg-js-0.8.1.tgz 34ms (cache miss)
+191 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 339ms
+192 silly audit report {
+192 silly audit report   esbuild: [
+192 silly audit report     {
+192 silly audit report       id: 1102341,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-67mh-4wv8-2f99',
+192 silly audit report       title: 'esbuild enables any website to send any requests to the development server and read the response',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<=0.24.2',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   vite: [
+192 silly audit report     {
+192 silly audit report       id: 1120784,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-v6wh-96g9-6wx3',
+192 silly audit report       title: 'launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<=6.4.2',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1116229,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-4w7w-66w2-5vf9',
+192 silly audit report       title: 'Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<=6.4.1',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1123525,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-fx2h-pf6j-xcff',
+192 silly audit report       title: 'vite: `server.fs.deny` bypass on Windows alternate paths',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<=6.4.2',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ]
+192 silly audit report }
+193 silly packumentCache corgi:https://registry.npmjs.org/esbuild cache-miss
+194 silly packumentCache corgi:https://registry.npmjs.org/vite cache-miss
+195 http fetch GET 200 https://registry.npmjs.org/esbuild 30ms (cache revalidated)
+196 silly packumentCache corgi:https://registry.npmjs.org/esbuild set size:887361 disposed:false
+197 http fetch GET 200 https://registry.npmjs.org/@supabase/storage-js/-/storage-js-2.110.8.tgz 590ms (cache miss)
+198 http fetch GET 200 https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.110.8.tgz 591ms (cache miss)
+199 http fetch GET 200 https://registry.npmjs.org/@supabase/postgrest-js/-/postgrest-js-2.110.8.tgz 594ms (cache miss)
+200 http fetch GET 200 https://registry.npmjs.org/vite 386ms (cache revalidated)
+201 silly packumentCache corgi:https://registry.npmjs.org/vite set size:2288699 disposed:false
+202 http fetch GET 200 https://registry.npmjs.org/@supabase/phoenix/-/phoenix-0.4.5.tgz 870ms (cache miss)
+203 http fetch GET 200 https://registry.npmjs.org/@supabase/auth-js/-/auth-js-2.110.8.tgz 872ms (cache miss)
+204 http fetch GET 200 https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.110.8.tgz 1047ms (cache miss)
+205 http fetch GET 200 https://registry.npmjs.org/@supabase/functions-js/-/functions-js-2.110.8.tgz 1058ms (cache miss)
+206 silly ADD node_modules/iceberg-js
+207 silly ADD node_modules/@supabase/phoenix
+208 silly ADD node_modules/tslib
+209 silly ADD node_modules/@supabase/storage-js
+210 silly ADD node_modules/@supabase/realtime-js
+211 silly ADD node_modules/@supabase/postgrest-js
+212 silly ADD node_modules/@supabase/functions-js
+213 silly ADD node_modules/@supabase/auth-js
+214 silly ADD node_modules/@supabase/supabase-js
+215 silly ADD node_modules/fsevents
+216 silly ADD
+217 silly ADD
+218 silly ADD
+219 silly ADD
+220 silly ADD
+221 silly ADD
+222 silly ADD
+223 silly ADD
+224 silly ADD
+225 silly ADD
+226 silly ADD
+227 silly ADD
+228 silly ADD
+229 silly ADD
+230 silly ADD
+231 silly ADD
+232 silly ADD
+233 silly ADD
+234 silly ADD
+235 silly ADD
+236 silly ADD
+237 silly ADD
+238 silly ADD
+239 silly ADD
+240 silly ADD
+241 silly ADD
+242 silly ADD
+243 silly ADD
+244 silly ADD
+245 silly ADD
+246 silly ADD
+247 silly ADD
+248 silly ADD
+249 silly ADD
+250 silly ADD
+251 silly ADD
+252 silly ADD
+253 silly ADD
+254 silly ADD
+255 silly ADD
+256 silly ADD
+257 silly ADD
+258 silly ADD
+259 silly ADD
+260 silly ADD
+261 silly ADD
+262 verbose cwd /Users/tesfayelemi/.gemini/antigravity/scratch/todo-tracking-app
+263 verbose os Darwin 25.5.0
+264 verbose node v23.10.0
+265 verbose npm  v10.9.2
+266 verbose exit 0
+267 info ok
